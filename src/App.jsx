@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+// import routes
+import Pages from './pages';
+
 const App = () => {
     return (
         <div>
-            <h1>Hello Bincast!</h1>
-            <p>Welcome to the Bincast Application</p>
+            <Pages />
         </div>
     );
 };
