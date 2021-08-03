@@ -9,12 +9,23 @@ import GlobalStyle from "./components/GlobalStyle";
 // import routes
 import Pages from "./pages";
 
+// configure our API UIR & cache
+const uri = import.meta.env.API_URI;
+const cache = new InMemoryCache();
+
+// configure Apollo CLient
+const client = new ApolloClient({
+  uri,
+  cache,
+  connectToDevTools: true
+});
+
 const App = () => {
   return (
-    <div>
+    <ApolloProvider client={client}>
     <GlobalStyle />
     <Pages />
-    </div>
+    </ApolloProvider>
     );
 };
 
