@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
       <Header />
       <Wrapper>
         <Navigation />
-        <main>{children}</main>
+        <Main>{children}</Main>
       </Wrapper>
     </React.Fragment>
   );
