@@ -35,6 +35,8 @@ const Home = () => {
   // if the data is successful, display the data in our UI
   return (
     <div>
+      {console.log(data)}
+      The data is loaded!
       {data.noteFeed.notes.map(note => (
         <div key={note.id}>{note.author.username}</div>
       ))}
