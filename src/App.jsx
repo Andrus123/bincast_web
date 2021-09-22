@@ -10,7 +10,7 @@ import GlobalStyle from './components/GlobalStyle';
 import Pages from './pages';
 
 // configure our API URI & cache
-const uri = import.meta.env.API_URI;
+const uri = 'http://localhost:4000/api';
 const cache = new InMemoryCache();
 
 // configure Apollo CLient
